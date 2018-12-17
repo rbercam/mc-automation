@@ -286,6 +286,8 @@ First, clone this repository to your local machine.
 
 ```
 git clone https://github.com/pedrohyvo/mc-automation
+
+git clone https://github.com/ModusCreateOrg/budgeting-sample-app-webpack2
 ```
 
 Open your terminal and go to *"<your_directory>/budgeting"* and run the following commands to start budget application:
@@ -307,7 +309,7 @@ http://localhost:3000/budget
 - Chromedriver (https://sites.google.com/a/chromium.org/chromedriver/downloads);
 - Bundler (http://bundler.io/);
 
-At the terminal go to *"<your_directory>/budgting/e2e"* and run the following command to download all dependencies:
+At the terminal go to *"<your_directory>/mc-automation"* and run the following command to download all dependencies:
 
 ```
 bundle install
@@ -318,5 +320,6 @@ After download all dependencies, you are able to run all tests:
 ```
 cucumber
 ```
+
 
 Finally, when test execution finishes you can see results on *"results/report.htm"*. Also you can check all screenshots generated for earch scenario on *"results/screenshots"*;

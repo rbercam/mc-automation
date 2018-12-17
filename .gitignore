@@ -49,4 +49,5 @@ build-iPhoneSimulator/
 # .ruby-gemset
 
 # unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
+>>>>>>> 1dc8103214945465a800b4ae74113083615ac92d
 .rvmrc
