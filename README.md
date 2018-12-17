@@ -17,8 +17,8 @@ Pre-conditions
 | Click on 'Add' button  | Outflow must be displayed on list, Working Balance must be updated     |
 ```
 
-### TC2 - Add new outflow - negative value
-The purpose of this test case is to add new outflow with negative value.
+### TC2 - Add new outflow - negative or zero value
+The purpose of this test case is to add new outflow with negative or zero value.
 
 ```
 Pre-conditions
@@ -30,7 +30,7 @@ Pre-conditions
 | Choose category       | Category selected must be displayed |
 | Insert a description      | Description field must be filled      |
 | Insert a negative value      | Value field must be filled      |
-| Click on 'Add' button  | The system should not accept negative values and display an error message      |
+| Click on 'Add' button  | The system should not accept negative or zero values and display an error message      |
 ```
 
 ### TC3 - Add new outflow - letters and special characters in value

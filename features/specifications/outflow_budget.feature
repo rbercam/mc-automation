@@ -14,6 +14,7 @@ Scenario Outline: Add new outflow with invalid values
             | "Kids"      | "Bought toys"            | "-1234"       |
             | "Gifting"   | " "                      | "!@#$%%"      |
             | "Insurance" | ""                       | ""            |
+            | "Insurance" | ""                       | "100"         |
             | "Utensils"  | ""                       | " "           |
             | "Car"       | "Bought a car"           | ""            |
             | "Clothing"  | "Bought clothes at mall" | " "           |
