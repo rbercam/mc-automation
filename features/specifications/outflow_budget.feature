@@ -11,9 +11,11 @@ Scenario Outline: Add new outflow with invalid values
             | "Car"       | "Paid gas"               | "tstmc"       |
             | "Travel"    | "Paid share of trip"     | ""            |
             | "Misc"      | "12345"                  | "1.1.."       |
+            # The test above here will fail because budgeting app doesn't have any validation for negative values.
             | "Kids"      | "Bought toys"            | "-1234"       |
             | "Gifting"   | " "                      | "!@#$%%"      |
             | "Insurance" | ""                       | ""            |
+            # Also, the test above here will fail because budgeting app doesn't have any validation for empty description.
             | "Insurance" | ""                       | "100"         |
             | "Utensils"  | ""                       | " "           |
             | "Car"       | "Bought a car"           | ""            |

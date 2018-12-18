@@ -1,4 +1,4 @@
-# Requirement 1
+
 ## Above here all tests cases planned to Budget Application: 
 
 ### TC1 - Add new outflow
@@ -274,23 +274,18 @@ Pre-conditions
 | Check total outflow and inflow | Total outflow and inflow must be the same as displayed on budget screen |
 ```
 
-# Requirement 2
-
 ## How to start budget application
 
 ### Prerequisites
 - Yarn installed (https://yarnpkg.com/lang/en/docs/install/);
 - Git installed (https://git-scm.com/downloads);
 
-First, clone this repository to your local machine.
-
+First, clone the below repository to your local machine. 
 ```
 git clone https://github.com/pedrohyvo/mc-automation
-
-git clone https://github.com/ModusCreateOrg/budgeting-sample-app-webpack2
 ```
 
-Open your terminal and go to *"<your_directory>/budgeting"* and run the following commands to start budget application:
+Open your terminal and go to *"<your_directory>/mc-automation/e2e"* and run the following commands to start budget application:
 ```
 yarn
 
@@ -299,27 +294,29 @@ yarn start
 
 Now, you can access budget application on:
 ```
-http://localhost:3000/budget
+http://localhost:8000/budget
 ```
 
 ## How to run all tests
 
 ### Prerequisites
 - Ruby >= 2.3.0;
+    * Windows - https://rubyinstaller.org/
 - Chromedriver (https://sites.google.com/a/chromium.org/chromedriver/downloads);
-- Bundler (http://bundler.io/);
+    * Windows - Download chromedriver_win32.zip. 
+        * In order to put ChromeDriver location in your PATH environment variable do as follows:
+Right click computer > properties > system properties > Advanced > System properties > select Path below > edit > add the path (if you are not sure of the path, you can right click the icon of the file and in the properties get the full path).
+- Bundler (http://bundler.io/)
+ps: You can find tutorials for Linux users on how to install Ruby, Chrome Driver and Bundler. The OS enviroment used for this exercise implementation was Windows. 
 
-At the terminal go to *"<your_directory>/mc-automation"* and run the following command to download all dependencies:
-
+On terminal go to *"<your_directory>/mc-automation"* and run the following command to download all dependencies:
 ```
 bundle install
 ```
 
 After download all dependencies, you are able to run all tests:
-
 ```
 cucumber
 ```
-
 
 Finally, when test execution finishes you can see results on *"results/report.htm"*. Also you can check all screenshots generated for earch scenario on *"results/screenshots"*;

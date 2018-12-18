@@ -1,6 +1,5 @@
 class Budget < SitePrism::Page
     set_url 'http://localhost:8000/budget'
-
     element :category_select, 'select[name="categoryId"]'
     element :description_field, 'input[name="description"]'
     element :value_field, 'input[name="value"]'
@@ -19,5 +18,4 @@ class Budget < SitePrism::Page
     def format_value(value)
         value.gsub(/(\d)(?=(\d{3})+(?!\d))/, "\\1,")
     end
-
 end
