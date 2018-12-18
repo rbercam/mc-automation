@@ -65,7 +65,7 @@ Pre-conditions
 | Click on 'Add' button | The system blocks space key and 'Add' button must be disabled |
 ```
 
-##### TC5 - Add new outflow without value
+### TC5 - Add new outflow without value
 The purpose of this test case is to add new outflow without value.
 
 ```
@@ -80,7 +80,7 @@ Pre-conditions
 | Click on 'Add' button |    'Add' button must be disabled    |
 ```
 
-##### TC6 - Add new outflow without description
+### TC6 - Add new outflow without description
 The purpose of this test case is to add new outflow without description.
 
 ```
@@ -95,7 +95,7 @@ Pre-conditions
 | Click on 'Add' button | Outflow with blank description must be displayed on list, Working Balance must be updated |
 ```
 
-##### TC7 - Add new inflow
+### TC7 - Add new inflow
 The purpose of this test case is to add new inflow successfully.
 
 ```
@@ -111,7 +111,7 @@ Pre-conditions
 | Click on 'Add' button    | Outflow must be displayed on list, Working Balance must be updated |
 ```
 
-##### TC8 - Add new inflow - without value
+### TC8 - Add new inflow - without value
 The purpose of this test case is to add new inflow without value.
 
 ```
@@ -126,7 +126,7 @@ Pre-conditions
 | Click on 'Add' button    |    'Add' button must be disabled    |
 ```
 
-##### TC9 - Add new inflow - negative value
+### TC9 - Add new inflow - negative value
 The purpose of this test case is to add new inflow with negative value.
 
 ```
@@ -142,7 +142,7 @@ Pre-conditions
 | Click on 'Add' button    | The system should not accept negative values and display an error message |
 ```
 
-##### TC10 - Add new inflow - without description
+### TC10 - Add new inflow - without description
 The purpose of this test case is to add new inflow without description.
 
 ```
@@ -175,7 +175,7 @@ Pre-conditions
 | Click on 'Add' button  | The system should not accept letters/special characters and display an error message      |
 ```
 
-##### TC12 - Enter amount greater than working balance
+### TC12 - Enter amount greater than working balance
 The purpose of this test case is to enter amount greater than working balance. Result should be a negative value on screen.
 
 ```
@@ -191,7 +191,7 @@ Pre-conditions
 | Click on 'Add' button                       | Outflow must be displayed on list, Working Balance must be updated |
 ```
 
-##### TC13 - Enter amount equal to the working balance
+### TC13 - Enter amount equal to the working balance
 The purpose of this test case is to enter amount equal to the working balance. Result should be zero balance.
 
 ```
@@ -207,7 +207,7 @@ Pre-conditions
 | Click on 'Add' button                   | Outflow must be displayed on list, Working Balance must be updated and result should be zero balance |
 ```
 
-##### TC14 - Enter too long value
+### TC14 - Enter too long value
 The purpose of this test case is to enter a bigger value.
 
 ```
@@ -226,7 +226,7 @@ PS: When you enter a too long value, the UI brokes. So, I suggest to limit the f
 to avoid this scenario.
 ```
 
-##### TC15 - Check new outflow on chart
+### TC15 - Check new outflow on chart
 The purpose of this test case is to check if new outflow is displayed on chart.
 
 ```
@@ -242,7 +242,7 @@ Pre-conditions
 | Click on 'Add' button | Check if new outflow is displayed on chart |
 ```
 
-##### TC16 - Check new inflow on chart
+### TC16 - Check new inflow on chart
 The purpose of this test case is to check if new inflow is displayed on chart.
 
 ```
@@ -258,7 +258,7 @@ Pre-conditions
 | Click on 'Add' button | Check if new inflow is displayed on chart |
 ```
 
-##### TC17 - Check inflow and outflow on report screen
+### TC17 - Check inflow and outflow on report screen
 The purpose of this test case is to check if all categories registered on budget screen are displayed on report page.
 
 ```
@@ -277,8 +277,14 @@ Pre-conditions
 ## How to start budget application
 
 ### Prerequisites
-- Yarn installed (https://yarnpkg.com/lang/en/docs/install/);
-- Git installed (https://git-scm.com/downloads);
+- Yarn 1.12.3 (https://yarnpkg.com/lang/en/docs/install/);
+- Git latest version (https://git-scm.com/downloads);
+- Google Chrome latest version (https://www.google.com/chrome);
+- Ruby 2.3.3 - (https://rubyinstaller.org)
+- Chromedriver 2.45 (https://sites.google.com/a/chromium.org/chromedriver/downloads);
+    * Windows - Download chromedriver_win32.zip  and add chromedriver location in your PATH environment variable.
+- Bundler 1.17.2 - (http://bundler.io/)
+ps: You can find tutorials for Linux users on how to install Ruby, ChromeDriver and Bundler. The OS enviroment used for this exercise implementation was Windows.
 
 First, clone the below repository to your local machine. 
 ```
@@ -298,17 +304,6 @@ http://localhost:8000/budget
 ```
 
 ## How to run all tests
-
-### Prerequisites
-- Ruby >= 2.3.0;
-    * Windows - https://rubyinstaller.org/
-- Chromedriver (https://sites.google.com/a/chromium.org/chromedriver/downloads);
-    * Windows - Download chromedriver_win32.zip. 
-        * In order to put ChromeDriver location in your PATH environment variable do as follows:
-Right click computer > properties > system properties > Advanced > System properties > select Path below > edit > add the path (if you are not sure of the path, you can right click the icon of the file and in the properties get the full path).
-- Bundler (http://bundler.io/)
-ps: You can find tutorials for Linux users on how to install Ruby, Chrome Driver and Bundler. The OS enviroment used for this exercise implementation was Windows. 
-
 On terminal go to *"<your_directory>/mc-automation"* and run the following command to download all dependencies:
 ```
 bundle install
