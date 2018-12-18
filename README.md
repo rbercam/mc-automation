@@ -284,7 +284,7 @@ Pre-conditions
 - Chromedriver 2.45 (https://sites.google.com/a/chromium.org/chromedriver/downloads);
     * Windows - Download chromedriver_win32.zip  and add chromedriver location in your PATH environment variable.
 - Bundler 1.17.2 - (http://bundler.io/)
-ps: You can find tutorials for Linux users on how to install Ruby, ChromeDriver and Bundler. The OS enviroment used for this exercise implementation was Windows.
+* ps: You can find tutorials for Linux users on how to install Ruby, ChromeDriver and Bundler. The OS enviroment used for this exercise implementation was Windows.
 
 First, clone the below repository to your local machine. 
 ```
